@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Kodemono';
+    src: url(fonts/KodeMono-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(fonts/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Radjhani';
+    src: url(fonts/Rajdhani-Regular.ttf);
+}
+@font-face {
+    font-family: 'Rajdlight';
+    src: url(fonts/Rajdhani-Light.ttf);
+}
+@font-face {
+    font-family: 'Rajdbold';
+    src: url(fonts/Rajdhani-Bold.ttf);
+}
+@font-face {
+    font-family: 'Rajdsemi';
+    src: url(fonts/Rajdhani-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Rajdmedium';
+    src: url(fonts/Rajdhani-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{background-color: #25283d;}
+.banner{
+    height: 100vh;
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+}
