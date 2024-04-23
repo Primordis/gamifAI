@@ -1,40 +1,119 @@
 @font-face {
     font-family: 'Kodemono';
-    src: url(fonts/KodeMono-VariableFont_wght.ttf);
-}
+    src: url(fonts/KodeMono-VariableFont_wght.ttf);}
+
 @font-face {
     font-family: 'Comfortaa';
-    src: url(fonts/Comfortaa-VariableFont_wght.ttf);
-}
+    src: url(fonts/Comfortaa-VariableFont_wght.ttf);}
+
 @font-face {
     font-family: 'Radjhani';
-    src: url(fonts/Rajdhani-Regular.ttf);
-}
+    src: url(fonts/Rajdhani-Regular.ttf);}
+
 @font-face {
     font-family: 'Rajdlight';
-    src: url(fonts/Rajdhani-Light.ttf);
-}
+    src: url(fonts/Rajdhani-Light.ttf);}
+
 @font-face {
     font-family: 'Rajdbold';
-    src: url(fonts/Rajdhani-Bold.ttf);
-}
+    src: url(fonts/Rajdhani-Bold.ttf);}
+
 @font-face {
     font-family: 'Rajdsemi';
-    src: url(fonts/Rajdhani-SemiBold.ttf);
-}
+    src: url(fonts/Rajdhani-SemiBold.ttf);}
+
 @font-face {
     font-family: 'Rajdmedium';
-    src: url(fonts/Rajdhani-Medium.ttf);
-}
+    src: url(fonts/Rajdhani-Medium.ttf);}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{background-color: #25283d;}
-.banner{
-    height: 100vh;
+
+:root{
+    --cadet: #25283d;
+    --neon: #4361ee;
+    --branco: #fdfffc;
+    --cinza: #5d5e60;
+    --laranja: #e55812;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--branco);
+    font-family: 'Kodemono';
+}
+
+.c-grid {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--cadet);
+    display: flex;
+
+    button{
+        display: none;
+    }
+
+    img{
+        width: 300px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+    nav.menu{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        a{
+            color: var(--branco);
+            font-size: 18px;
+            text-decoration: underline transparent;
+        }
+
+        a:hover{
+            font-weight: 600;
+        }
+    }
+    
+}
+
+.banner {
+    height: 92.8vh;
     background-image: url(img/banner.jpg);
     background-repeat: no-repeat;
+}
+
+.banner-content{
+    height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 32px;
+    }
+}
+
+#about {
+    background-image: url(img/background2.png);
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+div.aboutdiv{
+
+}
+
+div.why{
+    
 }
