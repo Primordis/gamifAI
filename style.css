@@ -1,30 +1,37 @@
 @font-face {
     font-family: 'Kodemono';
-    src: url(fonts/KodeMono-VariableFont_wght.ttf);}
+    src: url(fonts/KodeMono-VariableFont_wght.ttf);
+}
 
 @font-face {
     font-family: 'Comfortaa';
-    src: url(fonts/Comfortaa-VariableFont_wght.ttf);}
+    src: url(fonts/Comfortaa-VariableFont_wght.ttf);
+}
 
 @font-face {
     font-family: 'Radjhani';
-    src: url(fonts/Rajdhani-Regular.ttf);}
+    src: url(fonts/Rajdhani-Regular.ttf);
+}
 
 @font-face {
     font-family: 'Rajdlight';
-    src: url(fonts/Rajdhani-Light.ttf);}
+    src: url(fonts/Rajdhani-Light.ttf);
+}
 
 @font-face {
     font-family: 'Rajdbold';
-    src: url(fonts/Rajdhani-Bold.ttf);}
+    src: url(fonts/Rajdhani-Bold.ttf);
+}
 
 @font-face {
     font-family: 'Rajdsemi';
-    src: url(fonts/Rajdhani-SemiBold.ttf);}
+    src: url(fonts/Rajdhani-SemiBold.ttf);
+}
 
 @font-face {
     font-family: 'Rajdmedium';
-    src: url(fonts/Rajdhani-Medium.ttf);}
+    src: url(fonts/Rajdhani-Medium.ttf);
+}
 
 * {
     margin: 0;
@@ -32,7 +39,7 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --cadet: #25283d;
     --neon: #4361ee;
     --branco: #fdfffc;
@@ -40,13 +47,14 @@
     --laranja: #e55812;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     color: var(--branco);
     font-family: 'Kodemono';
+    background-color: black;
 }
 
 .c-grid {
@@ -59,42 +67,42 @@ header {
     background-color: var(--cadet);
     display: flex;
 
-    button{
+    button {
         display: none;
     }
 
-    img{
+    img {
         width: 300px;
         margin-bottom: 8px;
         margin-top: 8px;
     }
 
-    nav.menu{
+    nav.menu {
         display: flex;
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
-        
-        a{
+
+        a {
             color: var(--branco);
             font-size: 18px;
             text-decoration: underline transparent;
         }
 
-        a:hover{
+        a:hover {
             font-weight: 600;
         }
     }
-    
+
 }
 
 .banner {
-    height: 92.8vh;
+    height: 90vh;
     background-image: url(img/banner.jpg);
     background-repeat: no-repeat;
 }
 
-.banner-content{
+.banner-content {
     height: calc(100vh - 180px);
     display: flex;
     align-items: center;
@@ -107,13 +115,100 @@ header {
 #about {
     background-image: url(img/background2.png);
     height: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-div.aboutdiv{
+.aboutdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
+    img {
+        max-width: 175px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    img.logotipo {
+        margin-bottom: 20px;
+        margin-top: unset;
+        max-height: 100px;
+        max-width: 300px;
+    }
+
+    p {
+        font-family: 'Rajdhani';
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h1,
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        font-family: 'Comfortaa';
+    }
+
+    h1 {
+        margin-top: 15px;
+    }
 }
 
-div.why{
+.why {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+    h2{
+        padding: 15px;
+    }
+
+    h1{
+        font-weight: 500;
+        font-family: 'Comfortaa';
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    p {
+        padding: 10px;
+        font-family: 'Rajdhani';
+        font-size: larger;
+    }
+}
+
+#cases{
+
+    margin-top: 45px;
+    
+    h1{
+        text-align: center;
+        font-size: 28px;
+    }
+
+.empresas{
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+    
+
+    svg {
+        max-width: 300px;
+        max-height: 325px;
+    }
+
+    svg:hover{
+        
+    }
+
     
 }
+}
+
