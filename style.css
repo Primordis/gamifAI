@@ -115,7 +115,6 @@ header {
 #about {
     background-image: url(img/background2.png);
     height: 100%;
-    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -164,11 +163,11 @@ header {
     align-items: center;
     padding: 15px;
 
-    h2{
+    h2 {
         padding: 15px;
     }
 
-    h1{
+    h1 {
         font-weight: 500;
         font-family: 'Comfortaa';
         font-size: 28px;
@@ -182,33 +181,30 @@ header {
     }
 }
 
-#cases{
+#cases {
 
     margin-top: 45px;
-    
-    h1{
+
+    h1 {
         text-align: center;
         font-size: 28px;
     }
 
-.empresas{
-    padding: 100px;
+    .empresas {
+        padding: 100px;
+        display: flex;
+        justify-content: flex-start;
+
+
+
+        svg {
+            max-width: 300px;
+            max-height: 325px;
+        }
+    }
+}
+
+#suporte {
     display: flex;
-    justify-content: space-evenly;
-    
 
-    
-
-    svg {
-        max-width: 300px;
-        max-height: 325px;
-    }
-
-    svg:hover{
-        
-    }
-
-    
 }
-}
-
