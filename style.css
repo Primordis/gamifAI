@@ -184,6 +184,9 @@ header {
 #cases {
 
     margin-top: 45px;
+    height: 800px;
+
+
 
     h1 {
         text-align: center;
@@ -193,18 +196,65 @@ header {
     .empresas {
         padding: 100px;
         display: flex;
-        justify-content: flex-start;
+        
 
-
+        .container1,
+        .container2,
+        .container3 {
+            position: relative;
+        }
 
         svg {
             max-width: 300px;
             max-height: 325px;
+            position: absolute;
+        }
+
+        .gale{
+            left: 150px;
+        }
+
+        .bio{
+            left: 500px;
+        }
+
+        .anima{
+            left: 850px;
+        }
+
+        .gale2{
+            left: 152px;
+            width: 570px;
+        }
+
+        .bio2{
+            left: 520px;
+            
+        }
+
+        .anima2{
+            left: 870px;
+            
+        }
+
+        img {
+            max-width: 300px;
+            max-height: 325px;
+            position: absolute;
+            transition: .5s ease;
+            opacity: 0;
+        }
+
+        img:hover{opacity: 1;}
+
+        .text {
+
+            text-align: center;
         }
     }
 }
 
 #suporte {
     display: flex;
-
+    text-align: center;
 }
