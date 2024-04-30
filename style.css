@@ -116,6 +116,10 @@ header {
     background-image: url(img/background2.png);
     height: 100%;
     background-repeat: no-repeat;
+
+    p{
+        font-weight: 600;
+    }
 }
 
 .aboutdiv {
@@ -259,15 +263,17 @@ header {
     text-align: center;
     padding: 35px;
 
-    img{
+    img:not(.logotipou){
         max-width: 75px;
         margin-top: 40px;
+        cursor: pointer;
     }
 
     .logotipou{
         max-width: 320px;
         display: flex;
         margin-bottom: 15px;
+        margin-top: 10px;
     }
 
     p{
@@ -277,5 +283,13 @@ header {
         font-weight: 550;
     }
 
+    p:hover:not(.copyright){
+        font-weight: 700;
+        cursor: pointer;
+    }
     
+}
+
+@media screen and (max-width: 1300px){
+    /* help meeeeeeeeeeeeeee */
 }
