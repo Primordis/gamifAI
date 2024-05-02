@@ -117,7 +117,7 @@ header {
     height: 100%;
     background-repeat: no-repeat;
 
-    p{
+    p {
         font-weight: 600;
     }
 }
@@ -183,6 +183,7 @@ header {
         padding: 10px;
         font-family: 'Rajdhani';
         font-size: larger;
+        text-align: center;
     }
 }
 
@@ -190,7 +191,6 @@ header {
 
     margin-top: 45px;
     height: 800px;
-
 
 
     h1 {
@@ -201,59 +201,78 @@ header {
     .empresas {
         padding: 100px;
         display: flex;
-        
+        justify-content: center;
 
-        .container1,
-        .container2,
-        .container3 {
+        .item1,
+        .item2,
+        .item3 {
             position: relative;
+            width: 300px;
+            height: 325px;
+        }
+
+        .item1 {
+
+            .f1 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .g1 {
+                position: absolute;
+                left: 7%;
+            }
+
+        }
+
+        .item2 {
+
+            .f2 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .g2 {
+                position: absolute;
+                left: 7%;
+            }
+
+        }
+
+        .item3 {
+
+            .f3 {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .g3 {
+                position: absolute;
+                left: 7%;
+            }
+
         }
 
         svg {
             max-width: 300px;
             max-height: 325px;
-            position: absolute;
-        }
-
-        .gale{
-            left: 150px;
-        }
-
-        .bio{
-            left: 500px;
-        }
-
-        .anima{
-            left: 850px;
-        }
-
-        .gale2{
-            left: 152px;
-            width: 570px;
-        }
-
-        .bio2{
-            left: 520px;
-            
-        }
-
-        .anima2{
-            left: 870px;
-            
         }
 
         img {
             max-width: 300px;
             max-height: 325px;
-            position: absolute;
             transition: .5s ease;
             opacity: 0;
         }
 
-        img:hover{opacity: 1;}
+        img:hover {
+            opacity: 1;
+        }
 
         .text {
-
             text-align: center;
         }
     }
@@ -263,33 +282,53 @@ header {
     text-align: center;
     padding: 35px;
 
-    img:not(.logotipou){
+    img:not(.logotipou) {
         max-width: 75px;
         margin-top: 40px;
         cursor: pointer;
     }
 
-    .logotipou{
+    .logotipou {
         max-width: 320px;
         display: flex;
         margin-bottom: 15px;
         margin-top: 10px;
     }
 
-    p{
+    p {
         display: flex;
         padding: 8px;
         font-size: 26px;
         font-weight: 550;
     }
 
-    p:hover:not(.copyright){
+    p:hover:not(.copyright) {
         font-weight: 700;
         cursor: pointer;
     }
-    
+
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1200px) {
     /* help meeeeeeeeeeeeeee */
+
+    .banner-content {
+        p {
+            font-size: 26px;
+        }
+
+        img {
+            height: 150px;
+        }
+    }
+
+    #cases{
+
+        svg{
+            height: 300px;
+        }
+        img{
+            height: 300px;
+        }
+    }
 }
