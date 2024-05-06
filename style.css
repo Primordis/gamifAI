@@ -288,6 +288,74 @@ header {
         cursor: pointer;
     }
 
+    .dropbtn {
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        padding: 16px;
+        font-size: 24px;
+        border: none;
+        font-family: 'Kodemono';
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--cadet);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content form {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--cadet);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: transparent;
+    }
+
+    button:not(.dropbtn){
+        background-color: var(--laranja);
+        color: white;
+        width: 60%;
+        height: 25px;
+        margin-top: 15%;
+
+        border: none;
+        border-radius: 4px;
+
+        font-family: 'Kodemono';
+        font-size: 17px;
+        font-weight: 700;
+
+        cursor: pointer;
+
+        transition: background-color 500ms ease;
+    }
+
+    button:hover {
+        background-color: #ad4929;
+    }
+
     .logotipou {
         max-width: 320px;
         display: flex;
@@ -300,6 +368,7 @@ header {
         padding: 8px;
         font-size: 26px;
         font-weight: 550;
+        width: fit-content;
     }
 
     p:hover:not(.copyright) {
