@@ -402,7 +402,74 @@ header {
 }
 
 @media screen and (max-width: 900px) {
+
+    .banner-content {
+        p {
+            font-size: 23px;
+        }
+
+        img {
+            height: 115px;
+        }
+    }
+
+    #cases {
+
+        svg {
+            height: 270px;
+        }
+
+        img {
+            height: 270px;
+        }
+
+        .empresas {
+
+            .item1 {
+                right: 10%;
+
+                .g1 {
+                    left: 17%;
+                }
+            }
+
+            .item2 {
+                right: 5%;
+
+                .g2 {
+                    left: 17%;
+                }
+            }
+
+            .item3 {
+                .g3 {
+                    left: 17%;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px) {
     /* help */
+
+    header {
+        nav.menu {
+            display: none;
+        }
+
+        button {
+            position: absolute;
+            top: 1%;
+            left: 85%;
+            display: unset;
+            width: 50px;
+            border: none;
+            background: none;
+            fill: white;
+        }
+    }
 
     .banner-content {
         p {
@@ -414,11 +481,14 @@ header {
         }
     }
 
-    .aboutdiv{
-        h1,h2{
+    .aboutdiv {
+
+        h1,
+        h2 {
             font-size: 22px;
         }
-        p{
+
+        p {
             font-size: 18px;
         }
     }
@@ -445,23 +515,349 @@ header {
 
         .empresas {
 
-            .item1,
-            .item2,
-            .item3 {
+
+            .item1 {
+                right: 10%;
 
                 .g1 {
-                    left: 20%;
-                }
-
-                .g2 {
-                    left: 20%;
-                }
-
-                .g3 {
-                    left: 20%;
+                    left: 25%;
                 }
             }
+
+            .item2 {
+                right: 5%;
+
+                .g2 {
+                    left: 25%;
+                }
+            }
+
+            .item3 {
+                .g3 {
+                    left: 25%;
+                }
+            }
+
         }
     }
 
+
+    #suporte {
+        .contatos {
+            img {
+                height: 65px;
+                width: 70px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+
+        }
+
+        img.logotipou {
+            height: 40px;
+            width: 227px;
+        }
+
+        p.copyright {
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    /* help */
+
+    header {
+        nav.menu {
+            display: none;
+        }
+
+        button {
+            position: absolute;
+            top: 1%;
+            left: 85%;
+            display: unset;
+            width: 50px;
+            border: none;
+            background: none;
+            fill: white;
+        }
+    }
+
+    .banner-content {
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            height: 95px;
+        }
+    }
+
+    .aboutdiv {
+
+        h1 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .why {
+        h2 {
+            font-size: 26px;
+        }
+
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    #cases {
+
+        svg {
+            height: 225px;
+        }
+
+        img {
+            height: 225px;
+        }
+
+        .empresas {
+
+
+            .item1 {
+                right: 20%;
+
+                .g1 {
+                    left: 35%;
+                }
+            }
+
+            .item2 {
+                right: 10%;
+
+                .g2 {
+                    left: 35%;
+                }
+            }
+
+            .item3 {
+                .g3 {
+                    left: 35%;
+                }
+            }
+
+        }
+    }
+
+
+    #suporte {
+        .contatos {
+            img {
+                height: 65px;
+                width: 70px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+
+        }
+
+        img.logotipou {
+            height: 40px;
+            width: 227px;
+        }
+
+        p.copyright {
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .banner-content {
+        p {
+            font-size: 16px;
+        }
+
+        img {
+            height: 70px;
+        }
+    }
+
+    #cases {
+
+        svg {
+            height: 225px;
+        }
+
+        img {
+            height: 225px;
+        }
+
+        .empresas {
+
+
+            .item1 {
+                right: 40%;
+
+                .g1 {
+                    left: 45%;
+                }
+            }
+
+            .item2 {
+                right: 20%;
+
+                .g2 {
+                    left: 45%;
+                }
+            }
+
+            .item3 {
+                .g3 {
+                    left: 45%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .banner-content {
+        p {
+            font-size: 14px;
+        }
+
+        img {
+            height: 70px;
+        }
+    }
+
+    .aboutdiv {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    #cases {
+
+        svg {
+            height: 200px;
+        }
+
+        img {
+            height: 200px;
+        }
+
+        .empresas {
+
+
+            .item1 {
+                right: 57%;
+
+                .g1 {
+                    left: 70%;
+                }
+            }
+
+            .item2 {
+                right: 33%;
+
+                .g2 {
+                    left: 70%;
+                }
+            }
+
+            .item3 {
+                right: 8%;
+
+                .g3 {
+                    left: 70%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .banner-content {
+        p {
+            font-size: 10px;
+        }
+
+        img {
+            height: 60px;
+        }
+    }
+
+    .aboutdiv {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    #cases {
+
+        svg {
+            height: 155px;
+        }
+
+        img {
+            height: 155px;
+        }
+
+        .empresas {
+
+
+            .item1 {
+                right: 95%;
+
+                .g1 {
+                    left: 130%;
+                }
+            }
+
+            .item2 {
+                right: 58%;
+
+                .g2 {
+                    left: 130%;
+                }
+            }
+
+            .item3 {
+                right: 22%;
+
+                .g3 {
+                    left: 130%;
+                }
+            }
+
+        }
+    }
+
+    #suporte {
+        .contatos {
+            img {
+                height: 50px;
+                width: 40px;
+            }
+        }
+    }
 }
