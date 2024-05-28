@@ -77,23 +77,33 @@ header {
         margin-top: 8px;
     }
 
-    nav.menu {
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        align-items: center;
 
-        a {
-            color: var(--branco);
-            font-size: 18px;
-            text-decoration: underline transparent;
-        }
+}
 
-        a:hover {
-            font-weight: 600;
-        }
+.menu {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 3%;
+    left: 30%;
+
+    a {
+        color: var(--branco);
+        font-size: 18px;
+        text-decoration: underline transparent;
+
+        font-family: 'Anta';
+        text-decoration-thickness: 2px;
+        transition: text-decoration 400ms ease;
     }
 
+    a:hover {
+        font-weight: 600;
+        text-decoration-color: white;
+    }
 }
 
 .banner {
@@ -306,7 +316,6 @@ header {
     }
 
     .dropdown-content {
-        display: none;
         position: absolute;
         background-color: var(--cadet);
         min-width: 160px;
@@ -318,22 +327,17 @@ header {
         color: white;
         padding: 12px 16px;
         text-decoration: none;
-        display: block;
     }
 
     .dropdown-content a:hover {
         background-color: var(--cadet);
     }
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
     .dropdown:hover .dropbtn {
         background-color: transparent;
     }
 
-    button:not(.dropbtn){
+    button:not(.dropbtn) {
         background-color: var(--laranja);
         color: white;
         width: 60%;
@@ -376,6 +380,9 @@ header {
         cursor: pointer;
     }
 
+    form {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -390,6 +397,8 @@ header {
             height: 150px;
         }
     }
+
+
 
     #cases {
 
@@ -523,9 +532,23 @@ header {
 @media screen and (max-width: 800px) {
     /* help */
 
+    .menu {
+        height: 200px;
+        /* padding: 0px 30px; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        left: 38%;
+        top: 60px;
+    }
+
     header {
-        nav.menu {
-            display: none;
+
+
+        #about {
+            padding: 100px 15%;
         }
 
         button {
@@ -541,12 +564,16 @@ header {
     }
 
     .banner-content {
+
+
         p {
             font-size: 21px;
+            margin-top: 150px;
         }
 
         img {
             height: 110px;
+            margin-top: 150px;
         }
     }
 
@@ -636,12 +663,22 @@ header {
 }
 
 @media screen and (max-width: 700px) {
+
     /* help */
+    .menu {
+        height: 200px;
+        /* padding: 0px 30px; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        left: 38%;
+        top: 60px;
+    }
 
     header {
-        nav.menu {
-            display: none;
-        }
+
 
         button {
             position: absolute;
@@ -755,6 +792,27 @@ header {
 
 @media screen and (max-width: 600px) {
 
+    .menu {
+        height: 200px;
+        /* padding: 0px 30px; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        left: 28%;
+        top: 60px;
+    }
+
+    header {
+        button {
+            left: 82%;
+        }
+    }
+
+
+
+
     .banner-content {
         p {
             font-size: 16px;
@@ -805,6 +863,24 @@ header {
 }
 
 @media screen and (max-width: 500px) {
+
+    .menu {
+        height: 200px;
+        /* padding: 0px 30px; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        left: 14%;
+        top: 60px;
+    }
+
+    header {
+        button {
+            left: 79%;
+        }
+    }
 
     .banner-content {
         p {
@@ -864,6 +940,24 @@ header {
 }
 
 @media screen and (max-width: 400px) {
+
+    .menu {
+        height: 200px;
+        /* padding: 0px 30px; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        left: -7%;
+        top: 60px;
+    }
+
+    header {
+        button {
+            left: 82%;
+        }
+    }
 
     .banner-content {
         p {
@@ -929,4 +1023,12 @@ header {
             }
         }
     }
+}
+
+.menu-fechado {
+    display: none;
+}
+
+#x {
+    display: none;
 }
